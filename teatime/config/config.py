@@ -3,11 +3,11 @@ import yaml
 from os import path
 from UserDict import UserDict
 
-from teetee import root
+from teatime import root
 
 
-class TeeTeeConfig(UserDict):
-    _default_file_location = 'etc/teetee.yml'
+class TeaTimeConfig(UserDict):
+    _default_file_location = 'etc/teatime.yml'
 
     @classmethod
     def from_string(cls, config_str):
