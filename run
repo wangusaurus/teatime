@@ -1,0 +1,14 @@
+#!/usr/bin/python
+import teetee.database
+import teetee.models  # Bootstrap db models
+
+from teetee.config import TeeTeeConfig
+
+
+def main():
+    conf = TeeTeeConfig.from_default_file()
+    database = teetee.database.DatabaseConnection.from_teetee_config(conf)
+    database.connect(teetee.database.Base, echo=True)
+
+if __name__ == '__main__':
+    main()
