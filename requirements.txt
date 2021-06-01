@@ -38,6 +38,6 @@ rsa==3.1.2
 simplejson==3.5.3
 six==1.2.0
 urlgrabber==3.9.1
-urllib3==1.7
+urllib3==1.26.5
 virtualenv==1.11.6
 yum-metadata-parser==1.1.4
